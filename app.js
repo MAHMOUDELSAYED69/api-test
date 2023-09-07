@@ -22,8 +22,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(cors({
   origin: '*',
-  allowedHeaders: ['Content-Type', 'Authorization'],
-  exposedHeaders: ['Content-Type', 'Authorization'],
   credentials: true,
 }));
 
