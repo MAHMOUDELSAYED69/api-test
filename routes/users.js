@@ -607,4 +607,10 @@ router.get('/', function(req, res, next) {
   ]);
 });
 
+router.post('/login', async (req,res)=>{
+  if(req.body.email=="joeshirf@gmail.com"&&req.body.password=="yusef1234"){
+    return res.send({msg:"logged in successfully"});
+  }
+  res.send({msg:"auth failed"});
+})
 module.exports = router;
